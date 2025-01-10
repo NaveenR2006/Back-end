@@ -7,7 +7,7 @@ const app = express();
 // middle man from req to res 
 app.use(express.json());
 
-mongoose.connect("mongodb://127.0.0.1:27017/expenses").then(() => {
+mongoose.connect("mongodb+srv://naveen:1234@cluster0.e8nyh.mongodb.net/").then(() => {
     console.log("connected to database...");
 });
 
